@@ -1,53 +1,77 @@
-# Hi, I'm Arun T.S. 👋
+<<<<<<< HEAD
+# wealthos-alpha
+Findashboard - GPT built
+=======
+# WealthOS Alpha
 
-**AI Product Manager** building GenAI products at enterprise scale.
+A private, zero-dependency WealthOS alpha that runs locally in the browser.
 
-Currently leading a **GenAI Agent Productivity Platform** at Verizon India —
-an LLM + Agentic AI system serving 2,000+ daily users in production.
+## Open
 
----
+Open `index.html` directly in a browser:
 
-## 🤖 What I build
+`/Users/arunhome/Documents/New project/WealthOS/index.html`
 
-- **GenAI platforms** — LLM, Agentic AI, RAG-based enterprise systems
-- **AI product tools** — competitive intelligence, feature tracking, PM productivity
-- **Fintech & banking products** — digital lending, payments, card processing
+## What Is Built
 
----
+- Executive dashboard with net worth, liquid net worth, savings rate, financial freedom progress, and Wealth Score.
+- Money hub with accounts, transactions, and CSV statement import.
+- Investment hub with value, cost, and unrealized gain.
+- Asset registry and liabilities.
+- Secure vault and insurance tracker.
+- Financial inbox for reviews, alerts, and detected events.
+- Goals and progress tracking.
+- AI Copilot-style Personal CFO insights generated from local data.
+- Local persistence using `localStorage`.
+- Mobile-first and desktop-optimized dark premium UI.
 
-## 🚀 Featured project
+## Try It
 
-### [FeatureIQ](https://github.com/yourusername/featureiq)
-> AI-powered competitor & feature intelligence tracker for Product Managers
+1. Click `Seed` to load sample family-office data.
+2. Click `+ Add` to add accounts, investments, assets, liabilities, policies, goals, reminders, or vault documents.
+3. Open `Money Hub` and upload `sample-bank-statement.csv`.
 
-Built with: `Python` · `Claude API` · `Supabase` · `Next.js` · `Stripe`
+## 7-Day Alpha Roadmap
 
-An AI PM tool that monitors competitor product updates, surfaces feature gaps,
-and generates strategic recommendations — automatically.
+### Day 1: Product Spine
+- Local private app shell
+- Dashboard and core modules
+- Manual entry
+- Local persistence
 
----
+### Day 2: Data Model Upgrade
+- Move from localStorage to Supabase/Postgres
+- Add authentication
+- Add typed schema for accounts, assets, liabilities, insurance, goals, reminders, documents, and transactions
 
-## 🛠️ Tech stack
+### Day 3: Banking & Expenses
+- Robust CSV import
+- Transaction review queue
+- Categorization rules
+- Recurring SIP/EMI/subscription detection
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+### Day 4: Investments & Reports
+- Investment holdings model
+- Allocation analytics
+- Monthly wealth report
+- Goal forecast calculations
 
----
+### Day 5: Vault & Family Office
+- Document uploads
+- Tags and linked entities
+- Nominees, beneficiaries, emergency contacts
+- Emergency readiness score
 
-## 📌 Background
+### Day 6: AI Copilot
+- Data-grounded AI summaries
+- Spending insights
+- Portfolio and risk review
+- Recommended action queue
 
-- 🏢 AI Product Manager @ **Verizon India** (Principal Engineer)
-- 🤖 Anthropic AI Fluency · Claude 101 Certified
-- 📦 15+ years across Fintech · Telecom · Banking
-- 🌏 Delivered products across India · Australia · Singapore · US
-- 📜 CSPO · SAFe 6 POPM · McKinsey Leadership Accelerator
-
----
-
-## 📫 Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ts-arun)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://YOUR-PORTFOLIO-URL)
+### Day 7: Hardening
+- Audit logs
+- Export/import backup
+- Mobile polish
+- Security review
+- Private deployment plan
+>>>>>>> a8c991d (Build WealthOS alpha)

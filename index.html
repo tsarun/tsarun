@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WealthOS Alpha</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <div class="brand">
+          <div class="brand-mark">W</div>
+          <div>
+            <strong>WealthOS</strong>
+            <span>Private Alpha</span>
+          </div>
+        </div>
+        <nav class="nav-list" id="navList"></nav>
+        <div class="sidebar-footer">
+          <span class="privacy-dot"></span>
+          <span>Local private mode</span>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Personal CFO Command Center</p>
+            <h1 id="pageTitle">Executive Dashboard</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" id="seedButton" title="Load sample family-office data">Seed</button>
+            <button class="primary-button" id="quickAddButton">+ Add</button>
+          </div>
+        </header>
+
+        <section class="mobile-tabs" id="mobileTabs" aria-label="Mobile navigation"></section>
+        <section id="viewRoot" class="view-root"></section>
+      </main>
+    </div>
+
+    <dialog id="entryDialog" class="dialog">
+      <form method="dialog" id="entryForm">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Universal Manual Entry</p>
+            <h2>Add Financial Record</h2>
+          </div>
+          <button class="ghost-button" value="cancel" aria-label="Close">Close</button>
+        </div>
+        <div class="form-grid">
+          <label>
+            Type
+            <select name="type" required>
+              <option value="account">Bank / Cash Account</option>
+              <option value="investment">Investment Holding</option>
+              <option value="asset">Physical / Business Asset</option>
+              <option value="liability">Liability</option>
+              <option value="insurance">Insurance Policy</option>
+              <option value="goal">Goal</option>
+              <option value="reminder">Reminder</option>
+              <option value="vault">Vault Document</option>
+            </select>
+          </label>
+          <label>
+            Name
+            <input name="name" placeholder="HDFC Savings, Nifty Index Fund..." required />
+          </label>
+          <label>
+            Value / Amount
+            <input name="value" type="number" min="0" step="0.01" placeholder="0" />
+          </label>
+          <label>
+            Category
+            <input name="category" placeholder="Savings, Mutual Fund, Term Life..." />
+          </label>
+          <label>
+            Due Date / Target Date
+            <input name="date" type="date" />
+          </label>
+          <label class="wide">
+            Notes
+            <textarea name="notes" placeholder="Nominee, renewal detail, folio, lender, document tags..."></textarea>
+          </label>
+        </div>
+        <footer class="dialog-actions">
+          <button class="secondary-button" value="cancel">Cancel</button>
+          <button class="primary-button" value="submit">Save Record</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
